@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,200&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">      
+            <style>
+                body{
+                    width: 1900px;
+                    background-color: #efecec;
+                    margin-top: auto;
+                    margin-left: auto;
+                }
+                #navbar{
+                    list-style-type: none;
+                    padding: 0;
+                    overflow: auto;
+                    margin-top: 0px;
+                    height: 130px;
+                    width: 100%;
+                }
+                .navitem{
+                    float: right;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 40px;
+                    padding-top: 30px;
+                    padding-bottom: 10px;
+                    width: 25%;
+                    text-align: center;
+                }
+                .navitem a{
+                    display: inline-block;
+                    color: rgb(14, 14, 14);
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    position: relative;
+                }
+                .navitem a:after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 5px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #fe96c7;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+                .navitem a:hover:after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+                #magtitle{
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-weight: 100; 
+                    font-style: italic;
+                    font-size: 80px;
+                    padding-top: 30px;
+                    padding-bottom: 10px;
+                    text-align: center;
+                }
+                #separator{
+                    border-width: 2px;
+                }
+                footer{
+                    background-color: #efecec;
+                    text-align: center;
+                    font-family: 'News Cycle', sans-serif;
+                    margin-top: 100px;
+                    overflow: hidden;
+                }
+                h1{
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 50px;
+                    margin-top: 120px;
+                    text-align: center;
+                    margin-bottom: 120px;
+                }
+                img{
+                    margin-left: 745px;
+                }
+                p{
+                    font-family: 'News Cycle', sans-serif;
+                    font-size: 25px;
+                    margin-left: 400px;
+                    margin-right: 400px;
+                    text-align: center;
+                }
+            </style>
+            <title>Home</title>
+        </head>
+        <body>
+            <h1 id="magtitle">Girlbosses in STEM.</h1>
+            <hr id="separator">
+            <ul id="navbar">
+                <li class="navitem"><a href="herstory.html">HERSTORY</a></li>
+                <li class="navitem"><a href="breakthroughs.html">BREAKTHROUGHS</a></li>
+                <li class="navitem"><a href="about.html">ABOUT</a></li>
+                <li class="navitem"><a href="index.html">HOME</a></li>
+              </ul>
+            <h1>ICON OF THE MONTH: HEDY LAMARR</h1>
+            <img src="hedylamarr.jpg" alt="Hedy Lamarr">
+            <p>Hedy Lamarr was a prominent actress in the 30s to late 50s Hollywood scene, but there was more to her than what met the eye. Lamarr had talent, beauty, and brains.
+                She laid out the foundation for the technology of the modern-day Bluetooth, GPS, and Wi-Fi. 
+            </p>
+            <footer>&copy; Girlbosses in STEM. All rights reserved.</footer>
+        </body>
+    </html>
